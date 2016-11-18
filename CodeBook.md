@@ -7,7 +7,16 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 For more info see: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 #Data Preparation (using run_analysis.R)
-* Download data
+* Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip.
+* Set working directory (setwd()) to file in zip called UCI HAR Dataset
+* Read in tables of interest (lines 4 -18)
+* Give columns names (lines 20 - 28)
+* Merge training and testing to form one dataset (lines 30 -33)
+* Extract measurements for sd and mean for each measurement (lines 35 - 43)
+* Use descriptive activity names to name the activities in the data set (lines 45 - 48)
+* Create a second, independent tidy data set with the average of each variable for each activity and each subject (lines 50 -55)
+
+
 #Variables
 * subjectId: 1 to 30 each representing a participant in the study
 * activity: the activity that the subject was doing at the time of the measurement
